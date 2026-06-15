@@ -8,10 +8,10 @@ import com.ms_resenas.resenas.model.ImagenResena;
 import com.ms_resenas.resenas.model.Resena;
 import com.ms_resenas.resenas.repository.ImagenResenaRepository;
 import com.ms_resenas.resenas.repository.ResenaRepository;
-import com.ms_resenas.resenas.webclient.CatalogoClient;
-import com.ms_resenas.resenas.webclient.PedidoClient;
-import com.ms_resenas.resenas.webclient.StorageClient;
-import com.ms_resenas.resenas.webclient.UsuarioClient;
+import com.ms_resenas.resenas.config.CatalogoClient;
+import com.ms_resenas.resenas.config.PedidoClient;
+import com.ms_resenas.resenas.config.StorageClient;
+import com.ms_resenas.resenas.config.UsuarioClient;
 import org.springframework.transaction.annotation.Transactional;
 
 
@@ -66,6 +66,8 @@ public class ResenaService {
         return convertirADto(resena);
     }
 
+
+
     public void agregarImagen(Long resenaId, MultipartFile archivo) {
         Resena resena = resenaRepository.findById(resenaId)
                 .orElseThrow(() -> new RecursoNoEncontradoException("Reseña no encontrada"));
@@ -93,7 +95,6 @@ public class ResenaService {
                 .comentario(resena.getComentario())
                 .verificada(resena.getVerificada())
                 .imagenIds(imagenIds)
-                .creadoEn(resena.getCreadoEn())
                 .build();
     }
 }

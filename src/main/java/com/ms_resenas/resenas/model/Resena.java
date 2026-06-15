@@ -39,6 +39,4 @@ public class Resena {
     @Column(nullable = false)
     private Boolean verificada = false; // TRUE si se confirma compra previa
 
-    @Column(name = "creado_en", nullable = false)
-    private LocalDateTime creadoEn = LocalDateTime.now();
 }
