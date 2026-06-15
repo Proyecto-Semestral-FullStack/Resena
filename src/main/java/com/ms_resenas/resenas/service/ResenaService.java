@@ -1,5 +1,6 @@
 package com.ms_resenas.resenas.service;
 
+import com.ms_resenas.resenas.config.StorageClient;
 import com.ms_resenas.resenas.dto.ArchivoResponseDTO;
 import com.ms_resenas.resenas.dto.ResenaRequestDTO;
 import com.ms_resenas.resenas.dto.ResenaResponseDTO;
@@ -10,7 +11,6 @@ import com.ms_resenas.resenas.repository.ImagenResenaRepository;
 import com.ms_resenas.resenas.repository.ResenaRepository;
 import com.ms_resenas.resenas.config.CatalogoClient;
 import com.ms_resenas.resenas.config.PedidoClient;
-import com.ms_resenas.resenas.config.StorageClient;
 import com.ms_resenas.resenas.config.UsuarioClient;
 import org.springframework.transaction.annotation.Transactional;
 
