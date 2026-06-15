@@ -17,3 +17,4 @@ usuario.service.url=lb://ms-usuarios
 catalogo.service.url=lb://ms-catalogo
 pedido.service.url=lb://ms-pedido
 storage.service.url=lb://ms-storage
+
