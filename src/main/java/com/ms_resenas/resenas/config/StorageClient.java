@@ -1,4 +1,4 @@
-package com.ms_resenas.resenas.webclient;
+package com.ms_resenas.resenas.config;
 
 import com.ms_resenas.resenas.dto.ArchivoResponseDTO;
 import com.ms_resenas.resenas.exception.StorageException;
